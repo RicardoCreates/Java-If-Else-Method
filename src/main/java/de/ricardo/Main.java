@@ -2,8 +2,10 @@ package de.ricardo;
 
 public class Main {
     public static void main(String[] args) {
-        double result = add(10,20);
+        int result = add(10,20);
+        double result1 = add(2.2,2.2);
         System.out.println("Result: " + result);
+        System.out.println("Result1: " + result1);
 
         double resultSub = sub(20, 15);
         System.out.println("ResultSub: " + resultSub);
@@ -21,6 +23,11 @@ public class Main {
         boolean isPalindrome = isPalindrome(testStr);
         System.out.println("Is Palindrome: " + isPalindrome);
 
+    }
+
+    public static int add (int a, int b) {
+        int sum = a + b;
+        return sum;
     }
 
     public static double add (double a, double b) {
